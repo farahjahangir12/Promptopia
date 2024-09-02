@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import Suspense from "@components/Suspense"
 import Form from "@components/Form";
