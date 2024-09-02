@@ -1,10 +1,11 @@
-'use client';
-
-import React, { Suspense } from 'react';
+import React, { Suspense as ReactSuspense } from 'react';
 
 const Suspense = ({ children }) => {
-  return <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>;
+  return (
+    <ReactSuspense fallback={<div>Loading...</div>}>
+      {children}
+    </ReactSuspense>
+  );
 };
 
 export default Suspense;
-
