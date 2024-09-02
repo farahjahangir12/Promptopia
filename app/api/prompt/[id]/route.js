@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {connection} from "@utils/database";
 import Prompt from "@models/prompt";
