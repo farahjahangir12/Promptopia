@@ -2,10 +2,10 @@
 import React from 'react';
 import Suspense from "@components/Suspense"
 import Form from "@components/Form";
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 
 const EditPrompt = () => {
-  const router = useRouter();
+
   const [submit, setSubmit] = useState(false);
   const [post, setPost] = useState({
     prompt: "",
@@ -46,9 +46,7 @@ const EditPrompt = () => {
           tag: post.tag,
         })
       });
-      if (response.ok) {
-        router.push("/");
-      }
+      
     } catch (error) {
       console.log(error);
     } finally {
