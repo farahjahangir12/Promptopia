@@ -5,6 +5,7 @@ import Form from "@components/Form";
 import { useSearchParams } from 'next/navigation';
 import {useState,useEffect} from "react"
 
+
 const EditPrompt = () => {
 
   const [submit, setSubmit] = useState(false);
@@ -68,4 +69,14 @@ const EditPrompt = () => {
   );
 };
 
-export default EditPrompt;
+const UpdatePrompt=() =>{
+    return (
+      <Suspense>
+        <EditPrompt />
+      </Suspense>
+    );
+  };
+
+export default UpdatePrompt;
+
+
