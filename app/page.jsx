@@ -3,7 +3,7 @@ import Feed from "@components/Feed.jsx"
 const Home = () => {
   return (
     <section className="flex-col w-full flex-center"> 
-      <h1 className="head_text text-center">Discover & Share<br/>
+      <h1 className="head_text text-center">Discover, Test & Share<br/>
       <span className="orange_gradient text-center">AI-Powered Prompts</span>
       </h1>
       <p className="desc text-center">Promptopia is an open-source AI
