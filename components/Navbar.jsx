@@ -26,7 +26,7 @@ const Navbar = () => {
    alt ="Promptopia Image"
    width={30}
    height={30}
-   className="object-contain"/>
+   className="object-contain ml-2"/>
    <p className="logo_text">Promptopia</p>
    </Link>
 
